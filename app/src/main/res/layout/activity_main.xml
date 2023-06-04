@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EFEA"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="273dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Оформление железнодорожного билета"
+        android:textColor="#3B4CE6"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idIn"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        android:background="#F3E3E3"
+        android:ems="10"
+        android:hint="Введите ID"
+        android:inputType="textPersonName"
+        android:paddingStart="14dp"
+        android:textColor="#3B4CE6"
+        android:textColorHint="#3B4CE6"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <EditText
+        android:id="@+id/ageIn"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="#F3E3E3"
+        android:ems="10"
+        android:hint="Введите ваш возраст"
+        android:inputType="textPersonName"
+        android:paddingStart="14dp"
+        android:textColor="#3B4CE6"
+        android:textColorHint="#3B4CE6"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idIn" />
+
+    <EditText
+        android:id="@+id/arrivalIn"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="#F3E3E3"
+        android:ems="10"
+        android:hint="Введите место прибытия"
+        android:inputType="textPersonName"
+        android:paddingStart="14dp"
+        android:textColor="#3B4CE6"
+        android:textColorHint="#3B4CE6"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageIn" />
+
+    <EditText
+        android:id="@+id/departureIn"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="#F3E3E3"
+        android:ems="10"
+        android:hint="Введите место отправления"
+        android:inputType="textPersonName"
+        android:paddingStart="14dp"
+        android:textColor="#3B4CE6"
+        android:textColorHint="#3B4CE6"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arrivalIn" />
+
+    <EditText
+        android:id="@+id/departureDateIn"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="#F3E3E3"
+        android:ems="10"
+        android:hint="Введите время отправления"
+        android:inputType="textPersonName"
+        android:paddingStart="14dp"
+        android:textColor="#3B4CE6"
+        android:textColorHint="#3B4CE6"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/departureIn" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:text="ОФОРМИТЬ БИЛЕТ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/departureDateIn"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
